@@ -9,6 +9,7 @@
 }
 a{
   text-decoration: none;
+  z-index: 100;
 }
 ul,
 ol,
@@ -31,54 +32,45 @@ body{
   font-size: 18px;
 }
 .wrapper{
-  overflow: hidden;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   min-height: 100%;
   z-index: 50;
-}
-.background{
   background: linear-gradient(90deg, 
-  rgba(48, 47, 79, 0.94) 24.45%, 
-  rgba(47, 47, 79, 0.87) 42.53%,
-  rgba(45, 45, 77, 0.24) 91.42%);
+    rgba(48, 47, 79, 0.94) 24.45%, 
+    rgba(48, 47, 79, 0.94) 24.45%, 
+    rgba(48, 47, 79, 0.94) 24.45%, 
+    rgba(48, 47, 79, 0.94) 24.45%, 
+    rgba(48, 47, 79, 0.94) 24.45%, 
+    rgba(47, 47, 79, 0.87) 42.53%,
+    rgba(45, 45, 77, 0.24) 91.42%);
 }
-
-.picture{
-  position: absolute;
-  z-index: 1;
-}
-
-.games__container{
-  position: relative;
-  overflow: hidden;
-}
-
-/* ================================ */
 
 [class*="__container"] {
   max-width: 1600px;
   margin: 0 auto;
 }
-/* ================================ */
 
 .main {
+  width: 1600px;
+  margin: 0 auto;
   flex: 1 1 auto;
   z-index: 50;
 }
-
 
 .header {
   position: absolute;
   width: 100%;
   top: 30px;;
-  left: 0;
-  z-index: 50;
+  left: 0px;
+  z-index: 60;
 }
+
 .header__container {
   display: flex;
   justify-content: center;
 }
+
 .menu-content {
   display: flex;
   flex-wrap: wrap;
@@ -86,26 +78,29 @@ body{
   width: 1134px;
   height: 67px;
 }
-.header__logo {
-  z-index: 2;
-}
+
 .img-logo {
   width: 67px;
 }
+
 .header__menu {
   flex: 1 1 auto;
   
 }
+
 .menu {
   display: flex;
   justify-content: center;
 }
+
 .menu__list {
   display: flex;
 }
+
 .menu__item {
   margin: 0px 40px 0px 0px;
 }
+
 .menu__link {
   font-family: 'Lato', Tahoma, serif;
   text-transform: uppercase;
@@ -116,6 +111,7 @@ body{
   color: #fff;
   opacity: 70%;
 }
+
 .home {
   font-weight: 600;
   opacity: 100%;
@@ -156,23 +152,29 @@ body{
     background-color:none;
     transition: background-color 0.3s ease 0s;
 }
+
 .button_transparent:hover {
   background-color: #85c5f0;
 }
 
-/* ================================ */
-
-
 .best-games__content {
-  display: flex;
-  margin: 270px 0px 150px 230px;
-  width: 580px;
-  height: 430px;
+  max-width: 580px;
+  max-height: 430px;
 }
 
-.block-text {
-  z-index: 50;
+.best-games-block {
+  padding-top: 250px;
 }
+
+.best-games {
+  background: url(../pictures/block1/icon1.png);
+  height: 850px;
+}
+
+.best-games__content img {
+  position: absolute;
+}
+
 .subh1 {
   font-family:'Lato', Tahoma, serif;
   font-size: 18px;
@@ -184,6 +186,7 @@ body{
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
 .block-text__title {
   font-family:'Lato', Tahoma, serif;
   font-size: 75px;
@@ -193,6 +196,7 @@ body{
   color: #fff;
   margin-bottom: 25px;
 }
+
 .block-text__text {
   font-family:'Lato', Tahoma, serif;
   font-size: 18px;
@@ -202,6 +206,7 @@ body{
   color: #fff;
   margin-bottom: 40px;
 }
+
 .block-text__text span {
   font-family:'Lato', Tahoma, serif;
   font-size: 18px;
@@ -212,32 +217,32 @@ body{
   text-decoration: underline;
 }
 
-/* ================================ */
-
-
-
 .features__container {
   height: 800px;
   background: url(../pictures/features/background.png);
   background-color: rgba(60, 53, 83, 5);
 }
+
 .features__content {
   margin: 0 auto;
   width: 700px;
 }
+
 .features__content-block {
-  padding:40px 0px 70px 0px;
+  padding:40px 0px 70px;
 }
+
 .features__content-title {
   font-family:'Lato', Tahoma, serif;
   font-weight: 700;
   font-weight: normal;
   font-size: 39px;
-  line-height: 50;
+  line-height: 50px;
   line-height: 130%;
   color: #fff;
   text-align: center;
 }
+
 .features__content-text {
   margin: 0 auto;
   padding-top: 25px;
@@ -245,13 +250,14 @@ body{
   font-weight: 400;
   font-weight: lighter;
   font-size: 16px;
-  line-height: 25;
+  line-height: 25px;
   line-height: 160%;
   color: #fff;
   opacity: 70%;
   text-align: center;
   text-transform: capitalize;
 }
+
 .features__block {
   width: 1100px;
   height: 380px;
@@ -260,6 +266,7 @@ body{
   justify-content: space-around;
   margin: 0 auto;
 }
+
 .block-content {
   width: 320px;
   height: 350px;
@@ -288,6 +295,7 @@ body{
   text-transform: capitalize;
   padding-top: 25px;
 }
+
 .block-content_text {
   font-family:'Lato', Tahoma, serif;
   font-weight: 300;
@@ -301,7 +309,7 @@ body{
 }
 
 .block-content_text, p {
-  padding: 15px 50px 70px 50px;
+  padding: 15px 50px 70px;
 }
 
 .block-content_circle {
@@ -311,10 +319,6 @@ body{
   margin: 0 auto;
   padding-top: 65px;
 }
-
-
-/* ================================ */
-
 
 .bringing-game {
   background-color: rgba(60, 53, 83, 5);
@@ -348,9 +352,7 @@ body{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-
 .bringing-game__content-block {
-
   width: 439px;
   height: 465px;
   margin: 80px 0px;
@@ -361,7 +363,7 @@ body{
   font-weight: 700;
   font-weight: normal;
   font-size: 39px;
-  line-height: 50;
+  line-height: 50px;
   line-height: 130%;
   color: #fff;
   text-transform: capitalize;
@@ -373,21 +375,13 @@ body{
   font-weight: 400;
   font-weight: normal;
   font-size: 16px;
-  line-height: 25;
+  line-height: 25px;
   line-height: 160%;
   color: #fff;
   opacity: 0.7;
   text-transform: capitalize;
 }
 
-
-/* ================================ */
-
-
-
-.download__container {
-  display: inline;
-}
 .download__content {
   background-color: rgba(60, 53, 83, 5);
   display: flex;
@@ -395,13 +389,13 @@ body{
   justify-content: space-around;
   align-items: center;
   padding-top: 50px;
-  
 }
+
 .download__content-block {
-  
   width: 365px;
   height: 625px;
 }
+
 .content-block {
   background: linear-gradient(90deg, #3B3253 0%, rgba(57, 48, 80, 0) 100%);
 }
@@ -411,18 +405,19 @@ body{
   font-weight: 700;
   font-weight: normal;
   font-size: 39px;
-  line-height: 50;
+  line-height: 50px;
   line-height: 130%;
   color: #fff;
   text-transform: capitalize;
 }
+
 .download__content-text {
   padding: 25px 0px;
   font-family:'Lato', Tahoma, serif;
   font-weight: 400;
   font-weight: normal;
   font-size: 16px;
-  line-height: 25;
+  line-height: 25px;
   line-height: 160%;
   color: #fff;
   opacity: 0.7;
@@ -436,38 +431,40 @@ body{
   padding-bottom: 30px;
 }
 
-/* ================================ */
-
-
 .cta {
   background-color: rgba(60, 53, 83, 5);
   height: 675px;
 }
+
 .cta__container {
   width: 100%;
   background: url(../pictures/cta/Rectangle\ 11.png);
   height: 450px;
   z-index: 1;
 }
+
 .cta__content {
   justify-content: center;
 }
+
 .cta__content-block {
   padding: 120px 0px;
   margin-left: 50%;
   width: 400px;
   height: 220px;
 }
+
 .cta__content-title {
   font-family:'Lato', Tahoma, serif;
   font-weight: 700;
   font-weight: normal;
   font-size: 39px;
-  line-height: 50;
+  line-height: 50px;
   line-height: 130%;
   color: #fff;
   text-transform: capitalize;
 }
+
 .cta__content-text {
   padding: 15px 0px;
   font-family:'Lato', Tahoma, serif;
@@ -478,16 +475,15 @@ body{
   opacity: 0.8;
   text-transform: capitalize;
 }
+
 .button-market {
   margin-right: 50%;
 }
+
 .cta img {
   position: absolute;
   z-index: 50;
 }
-
-/* ================================ */
-
 
 .pricign {
   height: 850px;
@@ -501,19 +497,22 @@ body{
   justify-content: center;
   text-align: center;
 }
+
 .pricign__content-block1 {
   margin-bottom: 60px;
 }
+
 .pricign__content-title {
   font-family:'Lato', Tahoma, serif;
   font-weight: 700;
   font-weight: normal;
   font-size: 39px;
-  line-height: 50;
+  line-height: 50px;
   line-height: 130%;
   color: #fff;
   text-transform: capitalize;
 }
+
 .pricign__content-text {
   padding: 15px 0px;
   font-family:'Lato', Tahoma, serif;
@@ -524,14 +523,17 @@ body{
   opacity: 0.7;
   text-transform: capitalize;
 }
+
 .pricign__content-block2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .pricign__content-price {
   margin-right: 30px;
 }
+
 .pricign__content-price:hover{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -547,6 +549,7 @@ body{
   padding-bottom: 10px;
   padding-top: 25px;
 }
+
 .price-text {
   font-family: 'Lato';
   font-style: normal;
@@ -557,11 +560,13 @@ body{
   opacity: 0.7;
   padding-bottom: 25px;
 }
+
 .price-sell {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .percent {
   width: 39px;
   height: 20px;
@@ -574,6 +579,7 @@ body{
   line-height: 16px;
   color: #FFFFFF;
 }
+
 .oldPrice {
   font-family: 'Lato';
   font-style: normal;
@@ -584,6 +590,7 @@ body{
   color: #FFFFFF;
   opacity: 0.6;
 }
+
 .newprice {
   font-family: 'Lato';
   font-style: normal;
@@ -593,20 +600,16 @@ body{
   color: #FFFFFF;
 }
 
-
-/* ================================ */
-
-
-
 .footer__container {
   height: 400px;
   background: #000;
 }
+
 .footer__content {
   display: flex;
   justify-content: center;
-
 }
+
 .content_block {
   width: 1200px;
   display: flex;
@@ -615,6 +618,7 @@ body{
   color: #fff;
   padding-top: 80px;
 }
+
 .content_block span{
   font-family: 'Lato';
   font-style: normal;
@@ -627,12 +631,15 @@ body{
 .content_block-emblem {
   width: 20%;
 }
+
 .content_block-about {
   width: 20%;
 }
+
 .content_block-account {
   width: 20%;
 }
+
 .content_block-contact {
   width: 20%;
 }
@@ -660,11 +667,9 @@ margin-bottom: 15px;
   border: 1px solid #fff;
   align-items: center;
 }
+
 .social-block {
   max-width: 200px;
   display: flex;
   justify-content: space-around;
 }
-
-
-/* ================================ */
